@@ -1,7 +1,8 @@
-#!/bin/bash
+#!/usr/bin/env bash
 set -e
 
-DEBIAN_FRONTEND=noninteractive
+export DEBIAN_FRONTEND=noninteractive
+
 CURL_WAS_INSTALLED=false
 if ! command -v curl &> /dev/null; then
 	echo "Installing temporary curl..."
@@ -10,7 +11,7 @@ if ! command -v curl &> /dev/null; then
 	CURL_WAS_INSTALLED=true
 fi
 
-/usr/bin/curl -sL https://firebase.tools | bash
+/usr/bin/curl -L https://firebase.tools | bash -s -- -x
 
 if [ "$CURL_WAS_INSTALLED" = true ]; then
 	echo "Removing temporary curl..."
