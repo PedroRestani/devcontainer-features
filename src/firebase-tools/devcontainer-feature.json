@@ -1,0 +1,9 @@
+{
+	"name": "Firebase CLI (via automatic script)",
+	"id": "firebase-tools",
+	"version": "1.0.0",
+	"description": "Installs Firebase CLI, a.k.a firebase-tools, using Firebase's automatic script",
+	"installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
