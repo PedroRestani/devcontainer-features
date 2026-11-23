@@ -14,10 +14,17 @@ jobs:
       matrix:
         features:
           - firebase-tools
+        # we are testing only debian but not ubuntu, hoping it ain't different enough
         baseImage:
           - debian:latest
-          - ubuntu:latest
-          - mcr.microsoft.com/devcontainers/base:ubuntu
+          - alpine:latest
+          - mcr.microsoft.com/devcontainers/base:debian
+          - mcr.microsoft.com/devcontainers/base:alpine
+        exclude:
+          - features: firebase-tools
+            baseImage: alpine:latest
+          - features: firebase-tools
+            baseImage: mcr.microsoft.com/devcontainers/base:alpine
     steps:
       - uses: actions/checkout@v4
 
