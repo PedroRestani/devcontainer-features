@@ -1,0 +1,30 @@
+{
+	"git-flow-alpine-latest": {
+		"image": "mcr.microsoft.com/devcontainers/base:alpine",
+		"features": {
+			"git-flow-next": {}
+		}
+	},
+	"git-flow-debian-latest": {
+		"image": "mcr.microsoft.com/devcontainers/base:debian",
+		"features": {
+			"git-flow-next": {}
+		}
+	},
+	"git-flow-version-tag-1.2.0": {
+		"image": "debian:latest",
+		"features": {
+			"git-flow-next": {
+				"version": "v1.2.0"
+			}
+		}
+	},
+	"git-flow-semver-2.1.0": {
+		"image": "debian:latest",
+		"features": {
+			"git-flow-next": {
+				"version": "2.1.0"
+			}
+		}
+	}
+}

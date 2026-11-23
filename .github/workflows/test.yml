@@ -13,14 +13,20 @@ jobs:
     strategy:
       matrix:
         features:
+          # order alphabetically
+          - git-flow-next
           - firebase-tools
         # we are testing only debian but not ubuntu, hoping it ain't different enough
         baseImage:
-          - debian:latest
+          # order alphabetically
           - alpine:latest
-          - mcr.microsoft.com/devcontainers/base:debian
+          - debian:latest
           - mcr.microsoft.com/devcontainers/base:alpine
+          - mcr.microsoft.com/devcontainers/base:debian
         exclude:
+          # order alphabetically
+          - features: git-flow-next
+            baseImage: alpine:latest
           - features: firebase-tools
             baseImage: alpine:latest
           - features: firebase-tools
@@ -40,6 +46,8 @@ jobs:
     strategy:
       matrix:
         features:
+          # order alphabetically
+          - git-flow-next
           - firebase-tools
     steps:
       - uses: actions/checkout@v4

@@ -1,0 +1,18 @@
+{
+	"name": "git-flow-next (via Github Releases)",
+	"id": "git-flow-next",
+	"version": "1.0.0",
+	"description": "Installs a chosen git-flow-next release",
+	"options": {
+		"version": {
+			"default": "latest",
+			"description": "git-flow-next [version](https://github.com/gittower/git-flow-next/releases) to install. Accepts semver or release tag",
+			"type": "string",
+			"proposals": ["1.2.0", "2.1.0"]
+		}
+	},
+	"installsAfter": [
+        "ghcr.io/devcontainers/features/git",
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

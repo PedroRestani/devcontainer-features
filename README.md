@@ -18,6 +18,15 @@ for [devcontainers/images repository](https://github.com/devcontainers/images).
 
 _Feel free to request support, fork and/or contribute to this repository to increase supported platforms_
 
+<!-- Order alphabetically -->
+### Standard Support for this Repository
+- [Alpine](https://hub.docker.com/_/alpine)
+- [Alpine Devcontainer](https://github.com/devcontainers/images/tree/main/src/base-alpine)
+- [Debian](https://hub.docker.com/_/debian)
+- [Debian Devcontainer](https://github.com/devcontainers/images/tree/main/src/base-debian)
+
+_Check each feature README to confirm platform support_
+
 ## Usage
 To reference a feature from this repository, add the desired features to a devcontainer.json ([see example](#ref-example)).
 Each feature has a README.md that shows how to reference the feature and which options are available for that feature.
@@ -52,5 +61,7 @@ For direct code changes, create a fork and pull request to this repository <span
 <!--
     If you're contributing to the PedroRestani/devcontainer-features repository directly,
     add yourself to the list of contributors.
+    
+    Order alphabetically
 -->
 **Currently solo mantained**
