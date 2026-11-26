@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-# NOTE: Firebase CLI seems to be entirely Debian-based, as installations fails on Alpine needing extra libraries to work
+# NOTE: Firebase CLI auto-install seems to be entirely Debian-based, as installations fails on Alpine needing extra libraries to work
 # Alpine support has been commented out,
 # but for the repository standards it should be implemented at some point
 
