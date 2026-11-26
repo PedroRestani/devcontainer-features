@@ -7,7 +7,7 @@ Installs Firebase CLI, a.k.a firebase-tools, using Firebase's automatic script
 
 ```json
 "features": {
-    "ghcr.io/PedroRestani/devcontainer-features/firebase-tools:1": {}
+    "ghcr.io/PedroRestani/devcontainer-features/firebase-tools:2": {}
 }
 ```
 
